@@ -1,3 +1,5 @@
+using ProniaApp.DataAccesLayer;
+
 namespace ProniaApp
 {
     public class Program
@@ -7,6 +9,8 @@ namespace ProniaApp
             var builder = WebApplication.CreateBuilder(args);
 
             builder.Services.AddControllersWithViews();
+            builder.Services.AddDbContext<ProniaContext>();
+              
 
             var app = builder.Build();
 

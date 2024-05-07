@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Asus\\OneDrive\\Masaüstü\\Pronia\\ProniaApp\\ProniaApp.csproj": {}
+    "C:\\Users\\Asus\\OneDrive\\Masaüstü\\ProniaApp\\Pronia\\ProniaApp\\ProniaApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Asus\\OneDrive\\Masaüstü\\Pronia\\ProniaApp\\ProniaApp.csproj": {
+    "C:\\Users\\Asus\\OneDrive\\Masaüstü\\ProniaApp\\Pronia\\ProniaApp\\ProniaApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus\\OneDrive\\Masaüstü\\Pronia\\ProniaApp\\ProniaApp.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\OneDrive\\Masaüstü\\ProniaApp\\Pronia\\ProniaApp\\ProniaApp.csproj",
         "projectName": "ProniaApp",
-        "projectPath": "C:\\Users\\Asus\\OneDrive\\Masaüstü\\Pronia\\ProniaApp\\ProniaApp.csproj",
+        "projectPath": "C:\\Users\\Asus\\OneDrive\\Masaüstü\\ProniaApp\\Pronia\\ProniaApp\\ProniaApp.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus\\OneDrive\\Masaüstü\\Pronia\\ProniaApp\\obj\\",
+        "outputPath": "C:\\Users\\Asus\\OneDrive\\Masaüstü\\ProniaApp\\Pronia\\ProniaApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,6 +49,20 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[8.0.2, )"

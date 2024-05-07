@@ -1,8 +1,10 @@
-﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+﻿
 @{
     ViewData["Title"] = "Index";
-    Layout = "~/Shared/_Layout.cshtml";
+    
 }
+
+@model List<GetCategoryVM>
 
    <!-- Begin Slider Area -->
       <div class="slider-area">
@@ -168,27 +170,24 @@
                 id="myTab"
                 role="tablist"
               >
-                <li class="nav-item" role="presentation">
+                    @foreach(var item in Model)
+                    {
+                    <li class="nav-item" role="presentation">
                   <a
-                    class="active"
-                    id="featured-tab"
-                    data-bs-toggle="tab"
-                    href="#featured"
-                    role="tab"
-                    aria-controls="featured"
-                    aria-selected="true"
-                  >
-                    Featured
-                  </a>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <a
-                    id="bestseller-tab"
                     data-bs-toggle="tab"
                     href="#bestseller"
                     role="tab"
                     aria-controls="bestseller"
                     aria-selected="false"
+                      >
+                    @item.Name
+                  </a>
+                </li>
+                        
+                    }
+                @* <li class="nav-item" role="presentation">
+                  <a
+                    id="bestseller-tab"
                   >
                     Bestseller
                   </a>
@@ -204,7 +203,7 @@
                   >
                     Latest
                   </a>
-                </li>
+                </li> *@
               </ul>
               <div class="tab-content" id="myTabContent">
                 <div
