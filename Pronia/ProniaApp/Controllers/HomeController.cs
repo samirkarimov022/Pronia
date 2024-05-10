@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProniaApp.DataAccesLayer;
+using ProniaApp.Models;
 using ProniaApp.viewModels.Categories;
 
 namespace ProniaApp.Controllers
@@ -11,8 +12,7 @@ namespace ProniaApp.Controllers
 
 
         private readonly ProniaContext _context;
-
-
+        private object id;
 
         public HomeController(ProniaContext context)
         {
@@ -21,26 +21,50 @@ namespace ProniaApp.Controllers
 
 
 
-        public async Task<IActionResult> Index() 
+        public async Task<IActionResult> Index()
         {
             //var data = await _context.categories.Where(c=>c.Name.Length > 6 ).ToListAsync();
             var data = await _context.categories
                 .Where(x => x.IsDeleted == false)
-               .Select(x=>new GetCategoryVM
+               .Select(x => new GetCategoryVM
                {
                    Id = x.Id,
-                   Name = x.Name,   
+                   Name = x.Name,
                })
                 //.OrderByDescending(c=>c.Id)
                 //.Take(4)
                 .ToListAsync();
             return View(data);
-        }    
+        }
+
+
+        public async Task<IActionResult> Test(int? id)
+        {
+            if (id == null || id < 1) return BadRequest();
+            var cat = await _context.categories.FindAsync(id);
+            if (cat == null) return NotFound();
+            _context.categories.Remove(cat);
+            await _context.SaveChangesAsync();
+            return Content(cat.Name);
+
+
+
+            //Category category = new Category
+            //{
+            //    Name = name,
+            //    CreatedTime = DateTime.UtcNow,
+            //    IsDeleted = false
+            //};
+            //await _context.categories.AddAsync(category);
+            //await _context.SaveChangesAsync();
+            //return Ok(name);
+
+        }
 
 
 
 
-        public async Task<IActionResult> Index2() 
+        public async Task<IActionResult> Index2()
         {
             return View();
         }
@@ -48,7 +72,7 @@ namespace ProniaApp.Controllers
 
 
 
-        public async Task<IActionResult> Shop() 
+        public async Task<IActionResult> Shop()
         {
             return View();
         }
@@ -56,7 +80,7 @@ namespace ProniaApp.Controllers
 
 
 
-        public async Task<IActionResult> Blog() 
+        public async Task<IActionResult> Blog()
         {
             return View();
         }
@@ -64,17 +88,7 @@ namespace ProniaApp.Controllers
 
 
 
-        public async Task<IActionResult> About() 
-        {
-            return View();
-        }
-
-
-
-
-
-
-        public async Task<IActionResult> Contact() 
+        public async Task<IActionResult> About()
         {
             return View();
         }
@@ -83,10 +97,20 @@ namespace ProniaApp.Controllers
 
 
 
-        public async Task<IActionResult> Faq() 
+
+        public async Task<IActionResult> Contact()
         {
             return View();
-        } 
+        }
+
+
+
+
+
+        public async Task<IActionResult> Faq()
+        {
+            return View();
+        }
 
 
 
@@ -96,7 +120,7 @@ namespace ProniaApp.Controllers
 
 
 
-        public async Task<IActionResult> Error() 
+        public async Task<IActionResult> Error()
         {
             return View();
         }

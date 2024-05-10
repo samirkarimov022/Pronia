@@ -42,7 +42,7 @@ namespace ProniaApp.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("categories");
+                    b.ToTable("Category");
                 });
 #pragma warning restore 612, 618
         }
