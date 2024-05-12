@@ -12,7 +12,7 @@ using ProniaApp.DataAccesLayer;
 namespace ProniaApp.Migrations
 {
     [DbContext(typeof(ProniaContext))]
-    [Migration("20240509232252_CreatedSlidersTable")]
+    [Migration("20240512120616_CreatedSlidersTable")]
     partial class CreatedSlidersTable
     {
         /// <inheritdoc />
@@ -45,7 +45,43 @@ namespace ProniaApp.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Category");
+                    b.ToTable("categories");
+                });
+
+            modelBuilder.Entity("ProniaApp.Models.Slider", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Discount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Subtitle")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Sliders");
                 });
 #pragma warning restore 612, 618
         }

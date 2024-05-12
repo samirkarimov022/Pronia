@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using ProniaApp.DataAccesLayer;
 using ProniaApp.Models;
 using ProniaApp.viewModels.Categories;
+using ProniaApp.viewModels.Slider;
 
 namespace ProniaApp.Controllers
 {
@@ -24,16 +25,17 @@ namespace ProniaApp.Controllers
         public async Task<IActionResult> Index()
         {
             //var data = await _context.categories.Where(c=>c.Name.Length > 6 ).ToListAsync();
-            var data = await _context.categories
-                .Where(x => x.IsDeleted == false)
-               .Select(x => new GetCategoryVM
-               {
-                   Id = x.Id,
-                   Name = x.Name,
-               })
-                //.OrderByDescending(c=>c.Id)
-                //.Take(4)
-                .ToListAsync();
+            var data = await _context.Sliders
+                .Where(x => !x.IsDeleted)
+                .Select
+                (s => new GetSlidersVM
+                {
+                    Discount = s.Discount,
+                    Id = s.Id,
+                    ImageUrl = s.ImageUrl,
+                    Subtitle = s.Subtitle,
+                    Title = s.Title,
+                }).ToListAsync();
             return View(data);
         }
 

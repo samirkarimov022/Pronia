@@ -1,4 +1,4 @@
-﻿namespace ProniaApp.viewModels.Categories
+﻿    namespace ProniaApp.viewModels.Categories
 {
     public class GetCategoryVM
     {

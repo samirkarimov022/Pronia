@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Asus\\OneDrive\\Masa\u00FCst\u00FC\\ProniaApp\\Pronia\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{63B980D2-A578-4A70-8E52-F359ED50317F}|ProniaApp\\ProniaApp.csproj|c:\\users\\asus\\onedrive\\masa\u00FCst\u00FC\\proniaapp\\pronia\\proniaapp\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63B980D2-A578-4A70-8E52-F359ED50317F}|ProniaApp\\ProniaApp.csproj|solutionrelative:proniaapp\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63B980D2-A578-4A70-8E52-F359ED50317F}|ProniaApp\\ProniaApp.csproj|c:\\users\\asus\\onedrive\\masa\u00FCst\u00FC\\proniaapp\\pronia\\proniaapp\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63B980D2-A578-4A70-8E52-F359ED50317F}|ProniaApp\\ProniaApp.csproj|solutionrelative:proniaapp\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{63B980D2-A578-4A70-8E52-F359ED50317F}|ProniaApp\\ProniaApp.csproj|c:\\users\\asus\\onedrive\\masa\u00FCst\u00FC\\proniaapp\\pronia\\proniaapp\\areas\\admin\\controllers\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63B980D2-A578-4A70-8E52-F359ED50317F}|ProniaApp\\ProniaApp.csproj|solutionrelative:proniaapp\\areas\\admin\\controllers\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63B980D2-A578-4A70-8E52-F359ED50317F}|ProniaApp\\ProniaApp.csproj|c:\\users\\asus\\onedrive\\masa\u00FCst\u00FC\\proniaapp\\pronia\\proniaapp\\areas\\admin\\views\\slider\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{63B980D2-A578-4A70-8E52-F359ED50317F}|ProniaApp\\ProniaApp.csproj|solutionrelative:proniaapp\\areas\\admin\\views\\slider\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{63B980D2-A578-4A70-8E52-F359ED50317F}|ProniaApp\\ProniaApp.csproj|c:\\users\\asus\\onedrive\\masa\u00FCst\u00FC\\proniaapp\\pronia\\proniaapp\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63B980D2-A578-4A70-8E52-F359ED50317F}|ProniaApp\\ProniaApp.csproj|solutionrelative:proniaapp\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63B980D2-A578-4A70-8E52-F359ED50317F}|ProniaApp\\ProniaApp.csproj|C:\\Users\\Asus\\OneDrive\\Masa\u00FCst\u00FC\\ProniaApp\\Pronia\\proniaapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63B980D2-A578-4A70-8E52-F359ED50317F}|ProniaApp\\ProniaApp.csproj|solutionrelative:proniaapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{63B980D2-A578-4A70-8E52-F359ED50317F}|ProniaApp\\ProniaApp.csproj|c:\\users\\asus\\onedrive\\masa\u00FCst\u00FC\\proniaapp\\pronia\\proniaapp\\viewmodels\\products\\getproductadminvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63B980D2-A578-4A70-8E52-F359ED50317F}|ProniaApp\\ProniaApp.csproj|solutionrelative:proniaapp\\viewmodels\\products\\getproductadminvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,41 +34,67 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Masa\u00FCst\u00FC\\ProniaApp\\Pronia\\ProniaApp\\Program.cs",
-              "RelativeDocumentMoniker": "ProniaApp\\Program.cs",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Masa\u00FCst\u00FC\\ProniaApp\\Pronia\\ProniaApp\\Program.cs",
-              "RelativeToolTip": "ProniaApp\\Program.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAQwBQAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T16:05:19.24Z",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Masa\u00FCst\u00FC\\ProniaApp\\Pronia\\ProniaApp\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "ProniaApp\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Masa\u00FCst\u00FC\\ProniaApp\\Pronia\\ProniaApp\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "ProniaApp\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAEcAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T19:43:58.635Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Masa\u00FCst\u00FC\\ProniaApp\\Pronia\\ProniaApp\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
-              "RelativeDocumentMoniker": "ProniaApp\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Masa\u00FCst\u00FC\\ProniaApp\\Pronia\\ProniaApp\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
-              "RelativeToolTip": "ProniaApp\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-09T23:33:41.717Z",
+              "DocumentIndex": 2,
+              "Title": "SliderController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Masa\u00FCst\u00FC\\ProniaApp\\Pronia\\ProniaApp\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "RelativeDocumentMoniker": "ProniaApp\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Masa\u00FCst\u00FC\\ProniaApp\\Pronia\\ProniaApp\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "RelativeToolTip": "ProniaApp\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAADwvw4AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T19:44:12.455Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SliderController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Masa\u00FCst\u00FC\\ProniaApp\\Pronia\\ProniaApp\\Areas\\Admin\\Controllers\\SliderController.cs",
-              "RelativeDocumentMoniker": "ProniaApp\\Areas\\Admin\\Controllers\\SliderController.cs",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Masa\u00FCst\u00FC\\ProniaApp\\Pronia\\ProniaApp\\Areas\\Admin\\Controllers\\SliderController.cs*",
-              "RelativeToolTip": "ProniaApp\\Areas\\Admin\\Controllers\\SliderController.cs*",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAmwCYAAAAMAAAA",
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Masa\u00FCst\u00FC\\ProniaApp\\Pronia\\ProniaApp\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "ProniaApp\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Masa\u00FCst\u00FC\\ProniaApp\\Pronia\\ProniaApp\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "ProniaApp\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T23:31:11.232Z",
+              "WhenOpened": "2024-05-12T19:42:52.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Masa\u00FCst\u00FC\\ProniaApp\\Pronia\\ProniaApp\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "ProniaApp\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Masa\u00FCst\u00FC\\ProniaApp\\Pronia\\ProniaApp\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "ProniaApp\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T19:50:20.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetProductAdminVM.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Masa\u00FCst\u00FC\\ProniaApp\\Pronia\\ProniaApp\\viewModels\\Products\\GetProductAdminVM.cs",
+              "RelativeDocumentMoniker": "ProniaApp\\viewModels\\Products\\GetProductAdminVM.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Masa\u00FCst\u00FC\\ProniaApp\\Pronia\\ProniaApp\\viewModels\\Products\\GetProductAdminVM.cs",
+              "RelativeToolTip": "ProniaApp\\viewModels\\Products\\GetProductAdminVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAUwAUAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T19:34:55.06Z",
               "EditorCaption": ""
             }
           ]

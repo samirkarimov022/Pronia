@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProniaApp.DataAccesLayer;
 
@@ -11,9 +12,11 @@ using ProniaApp.DataAccesLayer;
 namespace ProniaApp.Migrations
 {
     [DbContext(typeof(ProniaContext))]
-    partial class ProniaContextModelSnapshot : ModelSnapshot
+    [Migration("20240512180819_CreatedProductsTable")]
+    partial class CreatedProductsTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -87,35 +90,6 @@ namespace ProniaApp.Migrations
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("ProniaApp.Models.ProductCategory", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("CategoryId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("CreatedTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CategoryId");
-
-                    b.HasIndex("ProductId");
-
-                    b.ToTable("ProductCategory");
-                });
-
             modelBuilder.Entity("ProniaApp.Models.ProductImage", b =>
                 {
                     b.Property<int>("Id")
@@ -180,25 +154,6 @@ namespace ProniaApp.Migrations
                     b.ToTable("Sliders");
                 });
 
-            modelBuilder.Entity("ProniaApp.Models.ProductCategory", b =>
-                {
-                    b.HasOne("ProniaApp.Models.Category", "Category")
-                        .WithMany()
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("ProniaApp.Models.Product", "Product")
-                        .WithMany("ProductCategories")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Category");
-
-                    b.Navigation("Product");
-                });
-
             modelBuilder.Entity("ProniaApp.Models.ProductImage", b =>
                 {
                     b.HasOne("ProniaApp.Models.Product", "Product")
@@ -213,8 +168,6 @@ namespace ProniaApp.Migrations
             modelBuilder.Entity("ProniaApp.Models.Product", b =>
                 {
                     b.Navigation("Images");
-
-                    b.Navigation("ProductCategories");
                 });
 #pragma warning restore 612, 618
         }
