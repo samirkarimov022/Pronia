@@ -113,7 +113,7 @@ namespace ProniaApp.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("ProductCategory");
+                    b.ToTable("ProductCategories");
                 });
 
             modelBuilder.Entity("ProniaApp.Models.ProductImage", b =>
