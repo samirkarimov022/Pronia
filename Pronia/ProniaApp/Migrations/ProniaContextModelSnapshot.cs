@@ -42,7 +42,7 @@ namespace ProniaApp.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("categories");
+                    b.ToTable("Categories");
                 });
 
             modelBuilder.Entity("ProniaApp.Models.Product", b =>

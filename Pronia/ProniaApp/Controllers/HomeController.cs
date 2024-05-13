@@ -43,9 +43,9 @@ namespace ProniaApp.Controllers
         public async Task<IActionResult> Test(int? id)
         {
             if (id == null || id < 1) return BadRequest();
-            var cat = await _context.categories.FindAsync(id);
+            var cat = await _context.Categories.FindAsync(id);
             if (cat == null) return NotFound();
-            _context.categories.Remove(cat);
+            _context.Categories.Remove(cat);
             await _context.SaveChangesAsync();
             return Content(cat.Name);
 
